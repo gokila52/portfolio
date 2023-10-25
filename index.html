@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport"
+    content="width=device-width,initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COMPUTER SCIENCE</title>
+</head>
+<style>
+.my{
+    display: flex;
+    padding: 20px;
+    
+    color: azure;
+}
+.flex{
+    display: flex;
+}
+.flex > div {
+    margin: 10px;
+    padding: 20px;
+    padding-left: 50px;
+    margin-left: 100px;
+}
+.text  {
+    color: azure;
+
+}
+.text1  {
+    color: azure;
+}
+.text2  {
+    color: azure;
+}
+.text3  {
+    
+    color: azure;
+    
+
+}
+.dropbtn {
+    background-color: #04AA6d;
+    color: azure;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: azure;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a {
+    color: rgb(0, 0, 0);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+.dropdown:hover .dropdown-content
+{
+    display: block;
+}
+.dropdown:hover .dropbtn {
+    background-color: #00ff08;
+}
+h1{
+    color: azure;
+    text-align: center;
+}
+.dropdown{
+    float: right;    
+}
+p{
+    color: azure;
+    text-align: justify;
+}
+
+.dropbtn {
+    background-color: #2804f7;
+    color: rgb(255, 255, 255);
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+.dropdown1 {
+    position: relative;
+    display: inline-block;
+    
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(0, 199, 199);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(241, 11, 11, 0.2);
+    z-index: 1;
+}
+.dropdown-content a {
+    color: rgb(255, 253, 253);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content a:hover {
+    background-color: #131010;
+}
+.dropdown1:hover .dropdown-content
+{
+    display: block;
+}
+.dropdown1:hover .dropbtn {
+    background-color: #16e71d;
+}
+#demo{
+    text-align: center;
+}
+button{
+    align-items: center;
+}
+.body{
+    color: aliceblue;
+    text-align: center;
+}
+</style>
+<style>
+     body{
+   background-image: url("data:image/jpeg;base64,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");
+background-repeat: no-repeat;
+background-size: cover;
+    }    
+</style>
+<body>
+    <h1>COMPUTER SCIENCE</h1>
+    <h1>..........................</h1>
+    <div class="dropdown">
+        <button
+        class="dropbtn">HOME</button>
+        <div class="dropdown-content">
+           <a href="subject.html">SUBJECT</a>
+       </div>
+       </div>
+       <div class="dropdown1">
+           <button
+           class="dropbtn">ITS ME</button>
+           <div class="dropdown-content">
+              <a href="about me.html">ABOUT ME</a>
+              <a href="hobby.html">HOBBY</a>
+           </div>
+       </div>
+
+       <p id="demo">Computer Science is the study of computers and computational systems. Unlike electrical and computer engineers, computer scientists deal mostly with software and software systems; this includes their theory, design, development, and application.
+        The <span style="color:rgb(255, 0, 0);">COMPUTER SCIENCE</span> focuses on the develpment and testing of software and software system.
+        The <span style="color:rgb(0, 255, 64);">COMPUTER SCIENCE COURSE</span> help to improve your skills.
+       Thanks For Watching</p><br>
+        <head>
+            <h1>COMPUTER SCIENCE FEATURES</h1>
+            <h1>.................................</h1>
+        </head>
+       <body>
+            <ul><li><span style="color:white;">*Speed</span></li><br>
+            <li><span style="color:white;">*Accuracy</span><li><br>
+            <li><span style="color:white;">*Deligence</span><li><br>
+            <li><span style="color:white;">*Memory</span><li><br>
+            <li><span style="color:white;">*Relaiability</span><li><br></ul>
+       </body> 
+        <pre>
+
+        </pre>
+      <center>  <button type="button"
+       onclick='document.getElementById("demo").innerHTML= "WELCOME TO MY PAGE"'>TOUCH ME</button>
+    </center>
+    
+</body>
+</html>
